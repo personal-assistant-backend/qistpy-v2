@@ -6,10 +6,16 @@
   "scripts": {
     "dev:api": "pnpm --filter @qistpy/api start:dev",
     "dev:web": "pnpm --filter @qistpy/web start",
+
+    "build": "pnpm --filter @qistpy/api build",
+    "start": "pnpm --filter @qistpy/api start",
+
     "build:api": "pnpm --filter @qistpy/api build",
     "build:web": "pnpm --filter @qistpy/web build",
+
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
+
     "prisma:generate": "pnpm --filter @qistpy/api prisma:generate",
     "prisma:migrate": "pnpm --filter @qistpy/api prisma:migrate",
     "prisma:studio": "pnpm --filter @qistpy/api prisma:studio",
