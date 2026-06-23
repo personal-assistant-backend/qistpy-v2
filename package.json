@@ -1,0 +1,27 @@
+{
+  "name": "qistpy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "QistPY — Pakistani installment marketplace (qistpy.com)",
+  "scripts": {
+    "dev:api": "pnpm --filter @qistpy/api start:dev",
+    "dev:web": "pnpm --filter @qistpy/web start",
+    "build:api": "pnpm --filter @qistpy/api build",
+    "build:web": "pnpm --filter @qistpy/web build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "prisma:generate": "pnpm --filter @qistpy/api prisma:generate",
+    "prisma:migrate": "pnpm --filter @qistpy/api prisma:migrate",
+    "prisma:studio": "pnpm --filter @qistpy/api prisma:studio",
+    "seed": "pnpm --filter @qistpy/api seed"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "prettier": "3.3.3"
+  },
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.7.0"
+}

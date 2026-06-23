@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# build
+dist/
+**/dist/
+
+# angular
+.angular/
+
+# env
+.env
+*.env
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
